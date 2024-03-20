@@ -4,9 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy-way-v1-mumbai": "npx hardhat run scripts/deploy-way-v1.ts --network mumbai ",
+    "deploy-way-v1-tbsc": "npx hardhat run scripts/deploy-way-v1.ts --network tbsc "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.0.2",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.5",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.1",
+    "typescript": "^4.0.2"
+  }
 }
